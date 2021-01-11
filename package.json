@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sass": "^1.30.0"
+  },
+  "name": "mwoodworks",
+  "version": "1.0.0",
+  "description": "Homepage & Portfolio Site for M_Woodworks",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firesoflife/w_woodworks.git"
+  },
+  "author": "Bryan D Goertz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firesoflife/w_woodworks/issues"
+  },
+  "homepage": "https://github.com/firesoflife/w_woodworks#readme",
+  "devDependencies": {}
+}

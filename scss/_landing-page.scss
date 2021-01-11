@@ -1,0 +1,42 @@
+@import 'variables';
+.landing {
+  &__buttons {
+    display: flex;
+  }
+}
+
+#landing {
+  background: $color-overlay;
+  color: $color-white;
+  height: 100%;
+  position: relative;
+
+  & h1 {
+    font-size: 8rem;
+    letter-spacing: 9px;
+    margin-bottom: $mg-sm;
+  }
+  & h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: $mg-md;
+    letter-spacing: 10px;
+  }
+
+  & ::before {
+    background: url(../img/backgrounds/hero-bg2.jpeg) no-repeat right
+      bottom/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  & .landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+  }
+}
