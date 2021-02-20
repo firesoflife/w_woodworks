@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0rem;
+  font-family: 'Myriad Pro', sans-serif;
+  overflow: scroll;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  outline: none;
+}
+
+.container {
+  min-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3.8rem;
+}
+
+.menu-btn {
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #b9d3dc;
+  margin: 0 3rem;
+}
+
+.bg-container {
+  background: url(../img/backgrounds/hero-bg2.jpeg) no-repeat right bottom/cover;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.363);
+  color: #fff;
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+.form-box {
+  margin: 3rem 0 6rem 0;
+  left: 8%;
+  height: min-content;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.form-box__title {
+  padding: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+.group {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+textarea {
+  font-family: 'open sans';
+}
+
+input,
+textarea {
+  font-size: 13px;
+
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b1b1b1;
+  color: #b1b1b1;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  opacity: 1;
+}
+
+label {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 15px;
+  opacity: 0.5;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #b1b1b1;
+  opacity: 1;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight,
+textarea:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+input.send-btn {
+  padding: 4rem;
+  float: right;
+  color: #b1b1b1;
+  transition: 0.2s ease;
+}
+
+input.send-btn:hover {
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  transition: all 0.33s ease;
+}
+
+.menu::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(240, 240, 240, 0);
+
+  transition: all 0.45s ease;
+}
+
+body.menu-active .menu {
+  left: 0;
+}
+
+body.menu-active .menu::before {
+  background: rgba(240, 240, 240, 0.9);
+}
