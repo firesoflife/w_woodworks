@@ -27,7 +27,6 @@ button {
 }
 
 .container {
-  min-width: 960px;
   margin: auto;
   overflow: hidden;
   padding: 0 3.8rem;
@@ -149,6 +148,40 @@ button {
   height: 80%;
 }
 
+@media screen and (max-width: 800px) {
+  #landing h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #landing h1,
+.contact-container h1 {
+    font-size: 4rem;
+  }
+
+  #landing h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-btn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  #landing h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    padding: 0.3rem;
+  }
+
+  #landing h3 {
+    font-size: 1.3rem;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+}
 body {
   box-sizing: border-box;
   height: 100vh;

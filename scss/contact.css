@@ -234,3 +234,33 @@ body.menu-active .menu {
 body.menu-active .menu::before {
   background: rgba(240, 240, 240, 0.9);
 }
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container h1 {
+    font-size: 4rem;
+  }
+
+  .menu-btn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .contact-container h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    padding: 0.3rem;
+  }
+
+  .form-box {
+    border-radius: 10px;
+  }
+}
