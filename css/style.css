@@ -1,190 +1,200 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  background-color: #4b4f54;
-  margin: 0rem;
-  border: 2rem solid #b9d3dc;
-  overflow: hidden;
-  font-family: "Myriad Pro", sans-serif;
+	background-color: #4b4f54;
+	margin: 0rem;
+	border: 2rem solid #b9d3dc;
+	overflow: hidden;
+	font-family: 'Myriad Pro', sans-serif;
 }
 
 a {
-  text-decoration: none;
-  color: #b9d3dc;
+	text-decoration: none;
+	color: #b9d3dc;
 }
 
 button {
-  background: transparent;
-  outline: none;
+	background: transparent;
+	outline: none;
 }
 
 .container {
-  margin: auto;
-  overflow: hidden;
-  padding: 0 3.8rem;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 3.8rem;
+}
+
+.logo {
+	width: 50rem;
+	height: auto;
 }
 
 .menu-btn {
-  font-size: 3rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #b9d3dc;
-  margin: 0 3rem;
+	font-size: 3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #b9d3dc;
+	margin: 0 3rem;
 }
 .menu-btn::before {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  transition: width 0s ease, background-color 0.5s ease;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	transition: width 0s ease, background-color 0.5s ease;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 .menu-btn::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: #006b68;
-  transition: width 0.5s ease;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: #006b68;
+	transition: width 0.5s ease;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 .menu-btn:hover::before {
-  width: 100%;
-  background: #006b68;
-  transition: width 0.5s ease;
+	width: 100%;
+	background: #006b68;
+	transition: width 0.5s ease;
 }
 .menu-btn:hover::after {
-  width: 100%;
-  background: transparent;
-  transition: all 0s ease;
+	width: 100%;
+	background: transparent;
+	transition: all 0s ease;
 }
 
 .menu-wrap {
-  display: flex;
-  position: relative;
-  z-index: 1;
+	display: flex;
+	position: relative;
+	z-index: 1;
 }
 .menu-wrap .menu__closed {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.95);
-  transition: all 0.7s ease-in;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.95);
+	transition: all 0.7s ease-in;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
 }
 .menu-wrap .menu__closed ul {
-  list-style: none;
-  font-size: 4rem;
-  font-weight: 200;
+	list-style: none;
+	font-size: 4rem;
+	font-weight: 200;
 }
 .menu-wrap .menu__closed ul li {
-  margin: 4rem;
+	margin: 4rem;
 }
 .menu-wrap .menu__closed ul a {
-  padding: 1rem 2rem;
+	padding: 1rem 2rem;
 }
 .menu-wrap .menu__open {
-  visibility: visible;
+	visibility: visible;
 }
 
 .landing__buttons {
-  display: flex;
+	display: flex;
 }
 
 #landing {
-  background: rgba(0, 0, 0, 0.363);
-  color: #ffffff;
-  height: 100%;
-  position: relative;
+	background: rgba(0, 0, 0, 0.363);
+	color: #ffffff;
+	height: 100%;
+	position: relative;
 }
 #landing h1 {
-  font-size: 8rem;
-  letter-spacing: 9px;
-  margin-bottom: 2rem;
+	font-size: 8rem;
+	letter-spacing: 9px;
+	margin-bottom: 2rem;
 }
 #landing h2 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin-bottom: 4rem;
-  letter-spacing: 10px;
+	text-transform: uppercase;
+	font-size: 3rem;
+	margin-bottom: 4rem;
+	letter-spacing: 10px;
 }
 #landing h3 {
-  text-transform: none;
-  font-size: 1.9rem;
-  margin-bottom: 4rem;
-  letter-spacing: 5px;
-  line-height: 3rem;
-  max-width: 70%;
+	text-transform: none;
+	font-size: 1.9rem;
+	margin-bottom: 4rem;
+	letter-spacing: 5px;
+	line-height: 3rem;
+	max-width: 70%;
 }
 #landing ::before {
-  background: url(../img/backgrounds/hero-bg2.jpeg) no-repeat right bottom/cover;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+	background: url(../img/backgrounds/hero-bg2.jpeg) no-repeat right bottom/cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 #landing .landing-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 80%;
 }
 
 @media screen and (max-width: 800px) {
-  #landing h1 {
-    font-size: 6rem;
-  }
+	#landing h1 {
+		font-size: 6rem;
+	}
 }
 @media screen and (max-width: 600px) {
-  #landing h1,
-.contact-container h1 {
-    font-size: 4rem;
-  }
+	#landing h1,
+	.contact-container h1 {
+		font-size: 4rem;
+	}
 
-  #landing h3 {
-    font-size: 1.3rem;
-  }
+	#landing h3 {
+		font-size: 1.3rem;
+	}
 
-  .menu-btn {
-    font-size: 2rem;
-  }
+	.menu-btn {
+		font-size: 2rem;
+	}
 }
 @media screen and (max-width: 460px) {
-  #landing h1 {
-    font-size: 3rem;
-  }
+	#landing h1 {
+		font-size: 3rem;
+	}
 
-  .container {
-    padding: 0.3rem;
-  }
+	.container {
+		padding: 0.3rem;
+	}
 
-  #landing h3 {
-    font-size: 1.3rem;
-    width: 100%;
-    letter-spacing: 2px;
-  }
+	#landing h3 {
+		font-size: 1.3rem;
+		width: 100%;
+		letter-spacing: 2px;
+	}
 }
 body {
-  box-sizing: border-box;
-  height: 100vh;
+	box-sizing: border-box;
+	height: 100vh;
+}
+
+img.contact-logo {
+	width: 80px;
+	height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
